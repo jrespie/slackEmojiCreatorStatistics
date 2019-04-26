@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+	"name": "Slack Emoji Creator Statistics",
+	"description": "This extension will tell you how many emoji each of your users has created",
+	"version": "1.0",
+	"content_scripts": [
+		{
+		"matches": ["https://*.slack.com/customize/emoji"],
+		"js": ["getEmojiCreatorStatistics.js"]
+		}
+	],
+	"web_accessible_resources": ["getEmojiCreatorStatistics.js"]
+}
