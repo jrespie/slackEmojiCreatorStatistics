@@ -5,7 +5,7 @@
 	"version": "1.0",
 	"content_scripts": [
 		{
-		"matches": ["https://*.slack.com/customize/emoji"],
+		"matches": ["https://*.slack.com/customize/emoji*"],
 		"js": ["getEmojiCreatorStatistics.js"]
 		}
 	],
